@@ -1,0 +1,24 @@
+precision mediump float;
+
+uniform vec4 uColor;
+uniform float uApplyRate;
+
+const float rScale = 0.298912;
+const float gScale = 0.586611;
+const float bScale = 0.114478;
+const vec3  monoScale = vec3(rScale, gScale, bScale);
+
+void main(){
+	// ÇªÇÃÇ‹Ç‹èoóÕ
+	vec4 rgba = uColor;
+
+	vec3 nega;
+	nega.r = 1.0 - rgba.r;
+	nega.g = 1.0 - rgba.g;
+	nega.b = 1.0 - rgba.b;
+	rgba.r = rgba.r*(1.0-uApplyRate) + nega.r*uApplyRate;
+	rgba.g = rgba.g*(1.0-uApplyRate) + nega.g*uApplyRate;
+	rgba.b = rgba.b*(1.0-uApplyRate) + nega.b*uApplyRate;
+
+	gl_FragColor = rgba;
+}

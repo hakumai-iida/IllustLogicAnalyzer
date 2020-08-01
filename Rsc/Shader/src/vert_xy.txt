@@ -1,0 +1,8 @@
+precision mediump float;
+
+attribute vec2 aXY;
+uniform float uDepth;
+
+void main(){
+	gl_Position = vec4( aXY.x, aXY.y, uDepth, 1.0 );
+}

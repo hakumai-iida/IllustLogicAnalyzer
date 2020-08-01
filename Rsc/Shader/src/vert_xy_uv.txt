@@ -1,0 +1,11 @@
+precision mediump float;
+
+attribute vec2 aXY;
+attribute vec2 aUV;
+uniform float uDepth;
+varying vec2 vTextureCoord;
+
+void main(){
+	gl_Position = vec4( aXY.x, aXY.y, uDepth, 1.0 );
+	vTextureCoord = aUV;
+}

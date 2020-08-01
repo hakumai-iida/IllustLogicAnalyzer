@@ -1,0 +1,16 @@
+precision mediump float;
+
+uniform sampler2D uTexture;
+uniform vec4 uColor;
+varying vec2 vTextureCoord;
+
+void main(){
+	vec4 rgba = texture2D( uTexture, vTextureCoord );
+
+	// アルファが有効であれば出力
+	if( rgba.a > 0.0 ){
+		gl_FragColor = uColor * rgba;
+	}else{
+		discard;
+	}
+}

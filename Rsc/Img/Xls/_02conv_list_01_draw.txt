@@ -1,0 +1,19 @@
+dfs\PairCommon.dfs PairCommon.dft Spr.csv Spr.dfp
+dfs\PairCommon.dfs PairCommon.dft Grp.csv Grp.dfp
+dfs\PairCommon.dfs PairCommon.dft Font.csv Font.dfp
+dfs\PairCommon.dfs PairCommon.dft Num.csv Num.dfp
+
+dfs\LabelCommon.dfs LabelCommon.dft Spr.csv SprLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft Grp.csv GrpLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft Font.csv FontLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft Num.csv NumLabel.inc
+
+dfs\IdCommon.dfs SprId.dft Spr.csv SprId.inc
+dfs\IdCommon.dfs GrpId.dft Grp.csv GrpId.inc
+dfs\IdCommon.dfs FontId.dft Font.csv FontId.inc
+dfs\IdCommon.dfs NumId.dft Num.csv NumId.inc
+
+dfs\SprData.dfs
+dfs\GrpData.dfs
+dfs\FontData.dfs
+dfs\NumData.dfs

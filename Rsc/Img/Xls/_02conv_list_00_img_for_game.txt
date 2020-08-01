@@ -1,0 +1,4 @@
+dfs\PairCommon.dfs PairCommon.dft Img.csv Img.dfp
+dfs\LabelCommon.dfs LabelCommon.dft Img.csv ImgLabel.inc
+dfs\IdCommon.dfs ImgId.dft Img.csv ImgId.inc
+dfs\ImgData.dfs

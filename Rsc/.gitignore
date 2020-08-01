@@ -1,0 +1,4 @@
+#生成ファイル、作業フォルダ等は無視
+Img/Xls/csv
+Img/Xls/out
+Img/Conv/IMAGE

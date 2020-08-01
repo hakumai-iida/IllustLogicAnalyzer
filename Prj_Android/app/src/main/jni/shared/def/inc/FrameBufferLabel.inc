@@ -1,0 +1,5 @@
+"HEAD",
+"TAIL",
+"SCREEN_SHOT",
+"WORK_CHARA",
+"WORK_STR",

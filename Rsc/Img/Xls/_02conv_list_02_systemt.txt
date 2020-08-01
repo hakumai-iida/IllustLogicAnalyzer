@@ -1,0 +1,8 @@
+dfs\LabelCommon.dfs LabelCommon.dft Shader.csv ShaderLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft FrameBuffer.csv FrameBufferLabel.inc
+
+dfs\IdCommon.dfs ShaderId.dft Shader.csv ShaderId.inc
+dfs\IdCommon.dfs FrameBufferId.dft FrameBuffer.csv FrameBufferId.inc
+
+dfs\ShaderData.dfs
+dfs\FrameBufferData.dfs

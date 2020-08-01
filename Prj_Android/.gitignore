@@ -1,0 +1,15 @@
+#生成ファイル、作業フォルダ等は無視
+*.iml
+*.apk
+
+.gradle
+.idea
+.externalNativeBuild
+
+local.properties
+
+build
+captures
+app/build
+app/src/main/gen
+app/release

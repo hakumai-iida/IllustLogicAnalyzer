@@ -1,0 +1,15 @@
+dfs\PairCommon.dfs PairCommon.dft Brush.csv Brush.dfp
+dfs\PairCommon.dfs PairCommon.dft Bucket.csv Bucket.dfp
+dfs\PairCommon.dfs PairCommon.dft PalOfs.csv PalOfs.dfp
+
+dfs\LabelCommon.dfs LabelCommon.dft Brush.csv BrushLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft Bucket.csv BucketLabel.inc
+dfs\LabelCommon.dfs LabelCommon.dft PalOfs.csv PalOfsLabel.inc
+
+dfs\IdCommon.dfs BrushId.dft Brush.csv BrushId.inc
+dfs\IdCommon.dfs BucketId.dft Bucket.csv BucketId.inc
+dfs\IdCommon.dfs PalOfsId.dft PalOfs.csv PalOfsId.inc
+
+dfs\BrushData.dfs
+dfs\BucketData.dfs
+dfs\PalOfsData.dfs

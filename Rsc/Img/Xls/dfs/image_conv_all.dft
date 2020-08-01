@@ -1,0 +1,3 @@
+<<COMMAND>> _source\<<FOLDER>><<FILE>>.<<FORMAT>>
+move /Y _source\<<FOLDER>><<FILE>>*.hif IMAGE\.
+

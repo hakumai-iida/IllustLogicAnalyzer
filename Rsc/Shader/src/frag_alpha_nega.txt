@@ -1,0 +1,28 @@
+precision mediump float;
+
+uniform sampler2D uTexture;
+uniform vec4 uColor;
+uniform float uApplyRate;
+varying vec2 vTextureCoord;
+
+void main(){
+	float a = texture2D( uTexture, vTextureCoord ).a;
+
+	// アルファが有効であれば出力
+	if( a > 0.0 ){
+		vec4 rgba = uColor;
+		rgba.a = rgba.a * a;
+
+		vec3 nega;
+		nega.r = 1.0 - rgba.r;
+		nega.g = 1.0 - rgba.g;
+		nega.b = 1.0 - rgba.b;
+		rgba.r = rgba.r*(1.0-uApplyRate) + nega.r*uApplyRate;
+		rgba.g = rgba.g*(1.0-uApplyRate) + nega.g*uApplyRate;
+		rgba.b = rgba.b*(1.0-uApplyRate) + nega.b*uApplyRate;
+
+		gl_FragColor = rgba;
+	}else{
+		discard;
+	}
+}

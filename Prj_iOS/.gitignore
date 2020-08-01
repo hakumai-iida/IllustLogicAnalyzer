@@ -1,0 +1,8 @@
+#生成ファイル、作業フォルダ等は無視
+Podfile.lock
+Pods
+
+AppEnv.xcodeproj/xcuserdata
+AppEnv.xcodeproj/project.xcworkspace/xcuserdata
+
+AppEnv.xcworkspace
