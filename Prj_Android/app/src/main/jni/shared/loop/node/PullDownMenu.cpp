@@ -188,6 +188,12 @@ float CPullDownMenu::getItemTapH( void ){
 // 更新
 //-------------------
 void CPullDownMenu::onUpdate0( void ){
+    // フラグのクリア（※[CStrMenu::onUpdate0]が呼ばれない可能性があるので）
+    m_bDecided = false;
+    m_bBlocked = false;
+    m_bPressedLong = false;
+    m_bSelectChanged = false;
+    
 	int count0 = m_nExpandCount;
 
     // 開いていたら
